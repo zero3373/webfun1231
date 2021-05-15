@@ -1,0 +1,25 @@
+
+body{background-color: black;}
+.t{background-color: white;
+width: 760px;
+font-size: 12px;}
+.f{float: right;
+font-size: 13px;}
+.g{text-align: center;
+font-size: 14px;
+font-weight: bold;
+background-image: url(./images/mypic_bg.gif);}
+.c{background-image: url(./images/leftbg.jpg);
+font-size: 13px;
+text-align: center;}
+.v{list-style: none;
+margin: 6px;}
+.b{list-style: url(./images/icon1.gif);
+margin: 6px;}
+a.q:hover{color: cornflowerblue;}
+
+a.k:visited{color: crimson;}
+a.l:active{color: cyan;}
+a.p:link{color: darkmagenta;}
+.j{float: right;}
+

@@ -1,0 +1,164 @@
+body{
+    text-align: left;
+}
+
+#wrap{
+    width: 760px;
+    height: 896px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 240px;
+    /* margin-right: 50px; */
+    border-color:goldenrod;
+    border-width: 1px;
+    border-style:solid;
+
+}
+
+#header{
+    /* border-color:rgb(36, 48, 161);   
+    border-width: 1px;
+    border-style:solid; */
+
+    height: 120px;
+    background-image: url(img/header.jpg);    /*设置背景图片 */
+    background-repeat: no-repeat;
+    
+    text-align: right;    /*文本对齐*/ 
+    color:rgb(255, 255, 255);    /*字体颜色 需要改成白色*/
+    letter-spacing:15px;    /*字符间距*/
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#导航navigation{
+    /* border-color:rgb(36, 48, 161);   
+    border-width: 1px;
+    border-style:solid; */
+
+    height: 25px;
+    background-image: url(img/topnav_bg_grey.gif);
+    background-repeat: repeat-x;
+    margin-top:-15px;
+}
+
+#导航navigation ul li{
+    float: left;
+    padding-right: 40px;
+    list-style: none;  /*去掉ul前面的点*/
+
+}
+
+#导航navigation ul li a{
+    text-decoration: none;
+}
+
+#导航navigation ul li a:link{
+    color: rgb(0, 0, 0);
+}
+
+#导航navigation ul li a:hover{
+    color: rgb(131, 185, 149);
+    background-image: url(img/topnav_bg.gif);
+    background-repeat: repeat-x;
+}
+
+#导航navigation ul li a:active{
+    color: rgb(139, 97, 97);
+}
+
+#导航navigation ul li a:visited{
+    color: rgb(216, 187, 125);
+    background-image: url(img/topnav_bg_grey.gif);
+    background-repeat: repeat-x;
+}
+
+#main{
+    /* border-color:rgb(23, 209, 39);   
+    border-width: 1px;
+    border-style:solid; */
+    height: 700px;
+    padding: 0px 5px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(67, 94, 216);
+}
+
+
+#lol:link{
+    color: goldenrod;
+}
+
+#lol:hover{
+    color: rgb(42, 165, 83);
+}
+
+#lol:active{
+    color: rgb(182, 87, 174);
+}
+
+#lol:visited{
+    color: crimson;
+}
+
+
+#news{
+    background-color: rgb(193, 212, 247);
+    /* border-color:rgb(161, 55, 36);   
+    border-width: 1px;
+    border-style:solid; */
+    height: 380px;
+    width: 210px;
+    float:right;
+    padding:0px 3px;
+    margin-top: 10px;
+}
+#news h1{
+    font-size: 17px;
+    line-height: 10px;
+    font-weight: normal;
+}
+
+#news p{
+    font-size: 13px;
+    padding: 5px;
+}
+
+#asd{
+    float:left;
+    padding: 5px;
+}
+
+#footer{
+    height: 30px;
+    border-color:goldenrod;  
+    border-width: 1px;
+    border-style:solid;
+}
+
+#footer a:link{
+    color: goldenrod;
+}
+
+#footer a:hover{
+    color: rgb(111, 102, 151);
+}
+
+#footer a:active{
+    color: rgb(197, 121, 121);
+}
+
+#footer a:visited{
+    color: rgb(198, 211, 123);
+}
+/* 点击前 a:link
+   鼠标经过 a:hover
+   点击时 a:active
+   访问后 a:visited*/
+#footer a{
+    text-decoration: none;/*去掉a标签的下划线*/
+}
+
