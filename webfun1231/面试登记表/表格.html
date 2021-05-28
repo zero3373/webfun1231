@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="utf-8">
+    <title>面试人员信息登记表</title>
+ </head>
+<body>
+<form id="myform" action="result.html" method="get">
+    <h2>面试人员信息登记表</h2>
+    <fieldset>
+        <legend>面试信息</legend>
+            <div>
+                <label for="work">应聘职业：</label><input id="work" name="work" type="text" placeholder="请输入本次应聘的职位" required minlength="2" maxlength="30"/>
+            </div>
+            <div>
+                <label for="money">期望月资：</label><input id="money" name="money" type="number" placeholder="5000" required step="100" min="3000" max="100000"/>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>基本信息</legend>
+            <div>
+                <label for="name">姓名：</label><input id="name" name="name" type="text" placeholder="请输入姓名" required minlength="2" maxlength="20"/>
+            </div>
+            <div>
+                <label for="sex">性别：</label><input id="sex" name="sex" type="radio" required/>男
+                <input id="sex" name="sex" type="radio" required/>女
+            </div>
+            <div placeholder="2000/01/01">
+                <label for="bir">生日：</label><div><input id="bir" name="bir" type="date" value="2000-01-01" required/>
+            </div>
+            <div>
+                <label for="jg">籍贯：</label><input id="jg" name="jg" list="jgList" type="text" placeholder="请选择或输入籍贯" required/>
+            </div>
+            <div>
+                <label for="IDcard">证件：</label><input id="IDcard" name="IDcard" type="text" placeholder="请输入身份证号" required minlength="18" maxlength="18"/>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>联系方式</legend>
+            <div>
+                <label for="phone">电话：</label><input id="phone" name="phone" type="text" placeholder="请输入电话号码" required minlength="6" maxlength="20"/>
+            </div>
+            <div>
+                <label for="email">邮箱：</label><input id="email" name="email" type="email" placeholder="若输入多个邮件用逗号分隔" required multiple/>
+            </div>
+            <div>
+                <label for="address">住址：</label><input id="address" name="address" type="text" placeholder="请输入地址" required minlength="8" maxlength="50"/>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>教育背景</legend>
+            <div>
+                <label for="money">学历：</label><select required style="width:100px;">
+                <option value="博士">博士</option>
+                <option value="研究生">研究生</option>
+                <option value="本科">本科</option>
+                <option value="大专">大专</option></select>
+            </div>
+            <div>
+                <label for="school">学校：</label><input id="school" name="school" type="text" placeholder="请输入毕业院校" required minlength="4" maxlength="20"/>
+            </div>
+            <div>
+                <label for="major">专业：</label><input id="major" name="major" type="text" placeholder="请输入专业" required minlength="4" maxlength="20"/>
+            </div>
+            <div>
+                <label for="gratime">毕业时间：</label><input id="gratime" name="gratime" type="month" required/>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>工作经历</legend>
+            请按时间倒序填写最近从业的三次工作经历
+            <div>
+                <label for="workplace1">工作单位：</label><input id="workplace1" name="workplace1" type="text" placeholder="请输入单位名称"/>
+                <label for="entrydate1">入职时间：</label><input id="entrydate1" name="entrydate1" type="month"/>
+                <label for="leavedate1">离职时间：</label><input id="leavedate1" name="leavedate1" type="month"/>
+                <label for="position1">职位：</label><input id="position1" name="position1" type="text" placeholder="职位"/>
+                <label for="salary1">月薪：</label><input id="salary1" name="salary1" type="number" placeholder="月薪"/>
+            </div>
+            <div>
+                <textarea rows="2" cols="55" placeholder="职责描述"></textarea>
+            </div>
+            <div>
+                <label for="workplace2">工作单位：</label><input id="workplace2" name="workplace2" type="text" placeholder="请输入单位名称"/>
+                <label for="entrydate2">入职时间：</label><input id="entrydate2" name="entrydate2" type="month"/>
+                <label for="leavedate2">离职时间：</label><input id="leavedate2" name="leavedate2" type="month"/>
+                <label for="position2">职位：</label><input id="position2" name="position2" type="text" placeholder="职位"/>
+                <label for="salary2">月薪：</label><input id="salary2" name="salary2" type="number" placeholder="月薪"/>
+            </div>
+            <div>
+                <textarea rows="2" cols="55" placeholder="职责描述"></textarea>
+            </div>
+            <div>
+                <label for="workplace3">工作单位：</label><input id="workplace3" name="workplace3" type="text" placeholder="请输入单位名称"/>
+                <label for="entrydate3">入职时间：</label><input id="entrydate3" name="entrydate3" type="month"/>
+                <label for="leavedate3">离职时间：</label><input id="leavedate3" name="leavedate3" type="month"/>
+                <label for="position3">职位：</label><input id="position3" name="position3" type="text" placeholder="职位"/>
+                <label for="salary3">月薪：</label><input id="salary3" name="salary3" type="number" placeholder="月薪"/>
+            </div>
+            <div>
+                <textarea rows="2" cols="55" placeholder="职责描述"></textarea>
+            </div>
+    </fieldset>
+
+    <div>自我总结<br/><textarea rows="7" cols="100" placeholder="自我评价"></textarea></div>
+
+    <div>
+        <input type="checkbox" name="ah" value="2" required />
+        本人承诺：以上所有信息均如实填写，如有不实，本人承担一切后果
+    </div>
+
+    <div>
+        <button>提交&nbsp;</button><button type="reset">重置&nbsp;</button>
+    </div>
+
+</form>
+    <datalist id="jgList">
+        <option value="北京" />
+        <option value="上海" />
+        <option value="广州" />
+        <option value="曹县" />
+        <option value="陕西" />
+        <option value="山西" />
+        <option value="深圳" />
+        <option value="天津" />
+        <option value="河北" />
+        <option value="河南" />
+        <option value="安徽" />
+        <option value="江苏" />
+        <option value="山东" />
+        <option value="湖北" />
+        <option value="湖南" />
+        <option value="甘肃" />
+        <option value="宁夏" />
+        <option value="青海" />
+        <option value="新疆" />
+        <option value="西藏" />
+    </datalist>
+</body>
+</html>
